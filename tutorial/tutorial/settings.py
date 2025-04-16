@@ -126,7 +126,9 @@ LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = '/logged_out/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'myapp/staticfiles/')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'myapp/static/'),
+    os.path.join(BASE_DIR, 'myapp/static/js'),
+    ('node_modules', os.path.join(BASE_DIR, 'myapp/static/js/node_modules/'))
 ]
